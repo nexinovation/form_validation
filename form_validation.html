@@ -6,11 +6,13 @@
     <script type="application/javascript">
         function checkdata()
         {
+            <!-- create refrences to the input element we wish to validate -->
             var name = document.getElementById("name").value;
             var email = document.getElementById("email").value;
             if(name == "")
             {
                 alert("Please enter your name");
+                username.focus();
                 return false;
             }
             else if(email == "")
